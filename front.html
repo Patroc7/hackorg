@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Basic Website</h1>
+    <p id="message">This is a simple webpage created with HTML and JavaScript.</p>
+
+    <button onclick="changeText()">Click Me!</button>
+
+    <script>
+        // JavaScript function to change the text content of the paragraph
+        function changeText() {
+            const message = document.getElementById('message');
+            message.textContent = 'You clicked the button! The text has changed.';
+        }
+    </script>
+
+</body>
+</html>
